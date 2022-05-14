@@ -3,29 +3,73 @@
   padding: 0;
   box-sizing: border-box;
 }
-a {
-  text-decoration: none;
+header h1 {
+  text-align: center;
+  background-color: black;
+  color: aliceblue;
+  font-size: 55px;
 }
-ul,
-ol {
-  list-style: none;
-}
-.first-section {
+section {
   max-width: 1920px;
   width: 100%;
-  margin: 0 auto;
+  margin: 350px auto 100px;
 }
-body {
-  background-image: url("../img/background.jpg");
-  background-size: cover;
-  height: 100vh;
+section .cars {
+  width: 500px;
+  display: inline-block;
+  margin-right: 50px;
+  position: absolute;
+  animation-name: move;
+  animation-duration: 3s;
+  animation-delay: 0.8s;
+  animation-iteration-count: 10;
+  animation-fill-mode: forwards;
+  animation-direction: revert;
+  z-index: 1;
+}
+section .cars img {
+  width: 100%;
+}
+section .cars1 {
+  width: 500px;
+  display: inline-block;
+  margin-right: 50px;
+  position: absolute;
+  animation-name: move1;
+  animation-duration: 3s;
+  animation-delay: 0.8s;
+  animation-iteration-count: 10;
+  animation-fill-mode: forwards;
+  animation-direction: revert;
+}
+section .cars1 img {
+  width: 100%;
+}
+.background {
+  height: 200px;
+  background-image: url(../img/background.jpg);
+  background-position: bottom;
+}
+header h1:hover {
+  color: rgb(9, 132, 48);
+  font-size: 75px;
+  transition-property: all;
+  transition-delay: 0.5s;
 }
 
-.first-section div {
-  display: inline-block;
-  margin-right: 100px;
+@keyframes move {
+  from {
+    left: 0;
+  }
+  to {
+    left: 1000px;
+  }
 }
-.first-section img {
-  height: 100px;
-  margin-top: 620px;
+@keyframes move1 {
+  from {
+    right: 0;
+  }
+  to {
+    right: 1000px;
+  }
 }
