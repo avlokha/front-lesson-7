@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+.first-section {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+body {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.first-section div {
+  display: inline-block;
+  margin-right: 100px;
+}
+.first-section img {
+  height: 100px;
+  margin-top: 620px;
+}
